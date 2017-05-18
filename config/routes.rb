@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  # namespace :admin do
+  #   resources :jobs, only: [:update, :delete]
+  # end
+
   resources :companies do
     resources :jobs
   end
