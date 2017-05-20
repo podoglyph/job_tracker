@@ -8,7 +8,6 @@ describe "User can delete a job" do
 
     expect(page).to have_content(job.title)
 
-
     click_button "Delete"
 
     expect(current_path).to eq("/companies/#{job.company_id}/jobs/#{job.id}")
